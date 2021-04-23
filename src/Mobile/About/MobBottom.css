@@ -1,0 +1,14 @@
+.mobbottom{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.imgslick{
+    width: 82%;
+    margin: auto;
+}
+
+.imgslick img{
+    width: 100%;
+    padding: 0 10px;
+}

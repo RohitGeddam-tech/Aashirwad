@@ -1,0 +1,87 @@
+.nav {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.09);
+  z-index: 1111;
+  padding: 10px 0;
+}
+
+.containerNav {
+  width: 98%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.start {
+  width: 7%;
+}
+
+.buttonAlign {
+  padding: 10px 0;
+}
+
+.button {
+  background-color: #092f57;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: white;
+  padding: 8px 15px;
+  border: 1px solid #092f57;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color: white;
+  color: #092f57;
+}
+
+.containerNav button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  margin-top: -5px;
+}
+
+.colapse {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.MuiCollapse-wrapperInner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* div.MuiCollapse-container.MuiCollapse-entered{
+    display: flex !important;
+    flex-flow: column !important;
+    height: fit-content !important;
+} */
+
+.navfade {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #7b7f8c;
+  padding: 10px 0;
+}

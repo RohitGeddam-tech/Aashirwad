@@ -1,0 +1,31 @@
+.mobcontact{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.mobcontactInfo{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 20px;
+}
+
+.mobcontactBox{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.mobcontactBox a{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-transform: capitalize;
+padding-left: 5%;
+color: #092F57;
+}

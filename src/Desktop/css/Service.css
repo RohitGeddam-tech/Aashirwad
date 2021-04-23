@@ -1,0 +1,102 @@
+.service {
+  width: 100%;
+  background-color: #092f57;
+  padding-bottom: 30px;
+}
+
+.serviceContainer {
+  width: 93%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.serviceHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceHeading img {
+  height: 1px;
+}
+
+.serviceHeading h1 {
+  margin: 0 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.serviceContainer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170.6%;
+  text-align: center;
+  color: #ffffff;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.overflow {
+  width: 100%;
+  display: flex;
+}
+
+.overflowContent {
+  width: 80%;
+  /* align-items: flex-end;
+    justify-content: flex-end; */
+  overflow-x: scroll;
+  display: flex;
+  margin: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.overflowContent::-webkit-scrollbar {
+  display: none;
+}
+
+.overflowBox {
+  width: 215px !important;
+  height: 215px !important;
+  border: 1px solid white;
+  margin: 15px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.overflowAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.overflowBox img {
+  padding: 20px;
+  width: 137px;
+  height: 137px;
+  margin: auto;
+}
+
+.overflowBox h3 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 170.6%;
+  color: #ffffff;
+  margin-top: 0;
+}
