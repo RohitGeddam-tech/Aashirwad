@@ -3,7 +3,7 @@ import DeskPath from '../Desktop/DeskPath'
 import MobPath from "../Mobile/MobPath";
 
 const Path = () => {
-    const [isMobile, setMobile] = useState(window.matchMedia("(max-width:00px)").matches);
+    const [isMobile, setMobile] = useState(window.matchMedia("(max-width:800px)").matches);
     useEffect(() => {
       window.addEventListener("resize", () => {
         setMobile(window.matchMedia("(max-width:800px)").matches);
