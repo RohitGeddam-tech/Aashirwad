@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import Button from "../../Utils/Button";
 
 const SliderContent = () => {
@@ -15,7 +15,7 @@ const SliderContent = () => {
         sit amet.
       </p>
       <div className="bannermobBtn">
-        <Button text="book an appointment" />
+      <NavHashLink to='/Aashirwad/Form'><Button text="book an Appointment" /></NavHashLink>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import cover from "../../Photos/deskcover.jpg";
-import Button from "../../Utils/Button";
+import ButtonMod from "../../Utils/ButtonMod";
 import "../css/banner.css";
 
 const BannerPage = () => {
@@ -16,7 +16,7 @@ const BannerPage = () => {
             ipsum dolor sit amet.
           </p>
           <div className="bannerBtn">
-            <Button text="book an appointment" />
+            <ButtonMod text="book an appointment" />
           </div>
         </div>
       </div>

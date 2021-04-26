@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../Photos/logo.svg";
 import { NavHashLink } from "react-router-hash-link";
 import "../css/Navbar.css";
-import Button from "../../Utils/Button";
+import ButtonMod from "../../Utils/ButtonMod";
 
 const Navbar = () => {
   return (
@@ -33,7 +33,7 @@ const Navbar = () => {
             Contact Us
           </NavHashLink>
           <div className="buttonAlign">
-            <Button text="Book an appointment" />
+            <ButtonMod text="Book an appointment" />
           </div>
         </div>
       </div>

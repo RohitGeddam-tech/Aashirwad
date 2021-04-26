@@ -56,7 +56,7 @@ const MobNav = () => {
             Contact Us
           </NavHashLink>
           <div className="mobbuttonAlign">
-            <Button text="book an Appointment" />
+            <NavHashLink to='/Aashirwad/Form'><Button text="book an Appointment" /></NavHashLink>
           </div>
         </Collapse>
       </div>

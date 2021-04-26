@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import scrn from "../../Photos/offers2.jpg";
-// import { Link } from "react-router-dom";
-import ButtonMod from "../../Utils/ButtonMod";
+import { NavHashLink } from "react-router-hash-link";
+import Button from "../../Utils/Button";
 
 const SliderContent = () => {
   return (
@@ -14,7 +14,7 @@ const SliderContent = () => {
       <h4>Rs.600</h4>
       <p>Kristy is an art director living in New York.</p>
       <div className="bannerBtn">
-        <ButtonMod text="book now" />
+        <NavHashLink to='/Aashirwad/Form#top'><Button text="book now" /></NavHashLink>
       </div>
     </div>
   );
