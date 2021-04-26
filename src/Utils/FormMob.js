@@ -227,7 +227,7 @@ const Form = ({ setOpen, open }) => {
           required
         />
         {nameInvalid ? (
-          <p className={classes.p}>Please fill in the form</p>
+          <p className={classes.p}>Please provide a valid name</p>
         ) : (
           ""
         )}
@@ -246,7 +246,7 @@ const Form = ({ setOpen, open }) => {
           required
         />
         {emailIDInvalid ? (
-          <p className={classes.p}>Please fill in the form</p>
+          <p className={classes.p}>Please provide a valid email</p>
         ) : (
           ""
         )}
@@ -265,7 +265,7 @@ const Form = ({ setOpen, open }) => {
           required
         />
         {phoneNoInvalid ? (
-          <p className={classes.p}>Please fill in the form</p>
+          <p className={classes.p}>Please provide a valid mobile number</p>
         ) : (
           ""
         )}
@@ -288,7 +288,7 @@ const Form = ({ setOpen, open }) => {
             ))}
           </Select>
         </FormControl>
-        {selInvalid ? <p className={classes.p}>Please fill in the form</p> : ""}
+        {selInvalid ? <p className={classes.p}>Please provide a selected package</p> : ""}
         <TextField
           id="datetime-local"
           type="datetime-local"
@@ -303,7 +303,7 @@ const Form = ({ setOpen, open }) => {
           variant="outlined"
         />
         {dateInvalid ? (
-          <p className={classes.p}>Please fill in the form</p>
+          <p className={classes.p}>Please provide the appointment date</p>
         ) : (
           ""
         )}
