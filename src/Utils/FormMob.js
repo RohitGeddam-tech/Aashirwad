@@ -113,7 +113,7 @@ const Form = ({ setOpen, open }) => {
   const [phoneNo, setPhoneNo] = useState("");
   const [emailID, setEmailID] = useState("");
   const [sel, setSel] = useState("");
-  const [date, setDate] = useState("2020-03-24T09:30");
+  const [date, setDate] = useState("yyyy-mm-ddT--:--");
   const [nameInvalid, setNameInvalid] = useState(false);
   const [phoneNoInvalid, setPhoneNoInvalid] = useState(false);
   const [emailIDInvalid, setEmailIDInvalid] = useState(false);
