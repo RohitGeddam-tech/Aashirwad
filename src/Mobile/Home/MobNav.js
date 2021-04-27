@@ -41,7 +41,7 @@ const MobNav = () => {
         </nav>
         <Collapse in={isActive} className="colapse">
           <NavHashLink to="/Aashirwad/About#top" className="navfade">
-            About US
+            About Us
           </NavHashLink>
           <NavHashLink to="/Aashirwad/Path#top" className="navfade">
             Pathology Equipments

@@ -7,7 +7,7 @@ const MobService = () => {
   return (
     <div className="service">
       <div className="serviceContainer">
-        <MobHeading text="service" name="mobserviceHeading" />
+        <MobHeading text="services" name="mobserviceHeading" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem

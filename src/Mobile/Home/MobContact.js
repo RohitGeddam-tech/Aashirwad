@@ -8,21 +8,21 @@ import MobHeading from "../../Utils/MobHeading";
 const MobContact = () => {
   return (
     <div className="mobcontact" id="contact">
-      <MobHeading text="Contact Us" name="mobaboutHeading" />
+      <MobHeading text="Contact Us" name="mobcontHeading" />
       <div className="mobcontactInfo">
         <div className="mobcontactBox">
-          <img src={call} alt="call" />
+          <a href="tel:+91 22 2671 1340" className='imagemob'><img src={call} alt="call" /></a>
           <a href="tel:+91 22 2671 1340">+912226711340</a>
         </div>
         <div className="mobcontactBox">
-          <img src={email} alt="email" />
+          <a href="mailto:contact@aashirwadlabs.com" className='imagemob'><img src={email} alt="email" /></a>
           <a href="mailto:contact@aashirwadlabs.com">
             contact@aashirwadlabs.com
           </a>
         </div>
         <div className="mobcontactBox">
-          <img src={location} alt="location" />
-          <a href="tel:+91 22 2671 1340">
+          <a href="https://goo.gl/maps/mEUdamwgNEbd6Ddh8" className='imagemob'><img src={location} alt="location" /></a>
+          <a href="https://goo.gl/maps/mEUdamwgNEbd6Ddh8">
             Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar,
             Ghatkopar (E), Mumbai, Maharashtra - 75
           </a>

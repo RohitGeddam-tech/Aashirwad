@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-flow: column;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .mobaboutContainer {
@@ -23,28 +23,29 @@
   line-height: 37px;
   text-transform: uppercase;
   color: #092f57;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
-.mobaboutContainer p{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 170.6%;
-text-align: center;
-color: #7B7F8C;
-padding-bottom: 10px;
+.mobaboutContainer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 170.6%;
+  text-align: center;
+  color: #7b7f8c;
+  padding: 10px 0;
+  margin-bottom: 0;
 }
 
-.mobaboutContainer img{
-    width: 100%;
-    border-radius: 3px;
+.mobaboutContainer img {
+  width: 100%;
+  border-radius: 3px;
 }
 
-.mobaboutButton{
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
+.mobaboutButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }

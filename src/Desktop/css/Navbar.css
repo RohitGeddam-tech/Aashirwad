@@ -23,7 +23,7 @@
 }
 
 .buttonAlign {
-  padding-left: 8px;
+  padding-left: 12px;
 }
 
 .button {
@@ -43,12 +43,12 @@
 }
 
 .button:hover {
-  background-color: white;
+  background-color: transparent;
   color: #092f57;
 }
 
 .navbarLinks a {
-  padding: 4px 8px;
+  padding: 12px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -56,4 +56,10 @@
   line-height: 20px;
   text-decoration: none;
   color: #7b7f8c;
+}
+
+.navbarLinks a:hover{
+  color: #092f57;
+  border-radius: 3px;
+  background-color: #ebebeb;
 }

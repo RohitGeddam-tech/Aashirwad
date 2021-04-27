@@ -1,12 +1,12 @@
 .moboffer {
   width: 100%;
   background-color: #eee;
+  padding: 40px 0;
 }
 
 .sliderContainer {
   width: 90%;
   margin: auto;
-  padding-bottom: 20px;
 }
 
 .bannerBtn {
@@ -64,7 +64,7 @@ button.slick-prev:before {
 
 .boxslick {
   width: 90%;
-  padding-top: 20px;
+  padding-top: 10px;
   margin: auto;
 }
 

@@ -10,12 +10,12 @@ const MobAbout = () => {
     <div className="mobabout">
       <div className="mobaboutContainer">
         <MobHeading text="About us" name="mobaboutHeading" />
+        <img src={doc} alt="doctor" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
           ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
-        <img src={doc} alt="doctor" />
         <div className="mobaboutButton">
           <NavHashLink to="/Aashirwad/About#top">
             <Button text="read more" />

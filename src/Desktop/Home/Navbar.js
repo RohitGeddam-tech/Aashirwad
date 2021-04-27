@@ -18,7 +18,7 @@ const Navbar = () => {
             to="/Aashirwad/About#top"
             activeStyle={{ color: "#092f57", fontWeight: "600" }}
           >
-            About
+            About Us
           </NavHashLink>
           <NavHashLink
             to="/Aashirwad/Path#top"

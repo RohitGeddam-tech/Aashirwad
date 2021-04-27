@@ -1,31 +1,56 @@
-.mobcontact{
-    width: 100%;
-    padding-top: 20px;
+.mobcontact {
+  width: 100%;
+  padding: 40px 0;
 }
 
-.mobcontactInfo{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-flow: column;
-    padding-bottom: 20px;
+.mobcontHeading {
+  display: flex;
+  justify-content: center;
 }
 
-.mobcontactBox{
-    display: flex;
-    align-items: center;
-    padding: 15px 0;
+.mobcontHeading h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #092f57;
+  padding-bottom: 15px;
+  text-align: center;
 }
 
-.mobcontactBox a{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 18px;
-display: flex;
-align-items: center;
-text-transform: capitalize;
-padding-left: 5%;
-color: #092F57;
+.mobcontactInfo {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.mobcontactBox {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.mobcontactBox a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  padding-left: 5%;
+  color: #092f57;
+}
+
+.mobcontactBox img {
+  width: 40px;
+  height: 40px;
+}
+
+a.imagemob {
+  padding-left: 0 !important;
 }

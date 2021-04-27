@@ -8,23 +8,29 @@ import "../css/Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact" id='contact'>
+    <div className="contact" id="contact">
       <div className="contactContainer">
         <LineHeading text="Contact Us" name="contactHeading" line={line} />
         <div className="contactInfo">
           <div className="contactBox">
-            <img src={call} alt="call" />
+            <a href="tel:+91 22 2671 1340">
+              <img src={call} alt="call" />
+            </a>
             <a href="tel:+91 22 2671 1340">+912226711340</a>
           </div>
           <div className="contactBox">
-            <img src={email} alt="email" />
+            <a href="mailto:contact@aashirwadlabs.com">
+              <img src={email} alt="email" />
+            </a>
             <a href="mailto:contact@aashirwadlabs.com">
               contact@aashirwadlabs.com
             </a>
           </div>
           <div className="contactBox">
-            <img src={location} alt="location" />
-            <a href="tel:+91 22 2671 1340">
+            <a href="https://goo.gl/maps/mEUdamwgNEbd6Ddh8">
+              <img src={location} alt="location" />
+            </a>
+            <a href="https://goo.gl/maps/mEUdamwgNEbd6Ddh8">
               Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar,
               Ghatkopar (E), Mumbai, Maharashtra - 75
             </a>

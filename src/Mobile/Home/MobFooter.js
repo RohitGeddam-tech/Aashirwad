@@ -16,6 +16,8 @@ const MobFooter = () => {
             PATHOLOGICAL EQUIPMENTS
           </NavHashLink>
           <NavHashLink to="/#contact">CONTACT US</NavHashLink>
+          <NavHashLink to="/#contact">PRIVACY POLICY</NavHashLink>
+          <NavHashLink to="/#contact">TERMS & CONDITIONS</NavHashLink>
         </div>
         <div className="mobFooterIcons">
           <img src={fb} alt="fb" />
