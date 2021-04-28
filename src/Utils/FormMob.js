@@ -109,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Form = () => {
-  const dateTime =new Date().toLocaleString()
+  const dateTime =new Date()
 
   const [name, setName] = useState("");
   const [phoneNo, setPhoneNo] = useState("");
