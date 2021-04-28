@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
+import DateTimePicker from 'react-datetime-picker'
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -106,6 +107,13 @@ const useStyles = makeStyles((theme) => ({
     zIndex: "9999",
     margin: "auto",
   },
+  date:{
+    margin: "auto",
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1),
+    width: "80%",
+    outline: "none",
+  }
 }));
 
 const Form = () => {
@@ -292,7 +300,7 @@ const Form = () => {
           </Select>
         </FormControl>
         {selInvalid ? <p className={classes.p}>Please provide a selected package</p> : ""}
-        <TextField
+        {/* <TextField
           id="datetime-local"
           type="datetime-local"
           label="Select Date & Time"
@@ -304,6 +312,11 @@ const Form = () => {
             shrink: true,
           }}
           variant="outlined"
+        /> */}
+        <DateTimePicker
+          className={classes.date}
+          value={date}
+          onChange={setDate}
         />
         {dateInvalid ? (
           <p className={classes.p}>Please provide the appointment date</p>
