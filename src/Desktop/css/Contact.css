@@ -1,0 +1,108 @@
+.contact {
+  width: 100%;
+}
+
+.contactContainer {
+  width: 93%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.contactHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactHeading img {
+  height: 1px;
+}
+
+.contactHeading h1 {
+  margin: 0 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #092f57;
+}
+
+.contactContainer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170.6%;
+  text-align: center;
+  color: #092f57;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contactInfo {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.contactBox {
+  width: 33%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.contactBox img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contactBox a {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-transform: lowercase;
+  color: #092f57;
+  text-decoration: none;
+}
+
+.contactlocBox {
+  width: 35%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.contactlocBox img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contactlocBox a {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-transform: lowercase;
+  color: #092f57;
+  text-decoration: none;
+}

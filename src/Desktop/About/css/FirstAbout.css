@@ -1,0 +1,77 @@
+.about {
+  width: 100%;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+.aboutContainer {
+  width: 93%;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.aboutHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.aboutHeading h1 {
+  margin: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #092f57;
+}
+
+.outerbox {
+  width: 88%;
+  height: 425px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innerbox1 {
+  width: 48%;
+  height: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.boxtitle {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 30px;
+  color: #092f57;
+  text-transform: uppercase;
+}
+
+.boxtext {
+  font-size: 18px;
+  width: 80%;
+  text-align: center;
+  color: #7b7f8c;
+}
+
+.dashed {
+  width: 0.3px;
+  height: 90%;
+  border: 0.2px solid #989cac;
+}
+
+.innerbox2 {
+  width: 48%;
+  height: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
