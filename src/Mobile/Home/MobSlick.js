@@ -8,7 +8,7 @@ import Button from "../../Utils/Button";
 
 const SliderContent = () => {
   return (
-    <div className="OffersSlide">
+    <div className="mobOffersSlide">
       <img src={scrn} alt='offersImage'/>
       <h3>Test Name</h3>
       <h4>Rs.600</h4>
