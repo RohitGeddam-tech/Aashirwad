@@ -108,12 +108,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Form = ({ setOpen, open }) => {
+const Form = () => {
+  const dateTime =new Date().toLocaleString()
+
   const [name, setName] = useState("");
   const [phoneNo, setPhoneNo] = useState("");
   const [emailID, setEmailID] = useState("");
   const [sel, setSel] = useState("");
-  const [date, setDate] = useState("yyyy-mm-ddT--:--");
+  const [date, setDate] = useState(`${dateTime}`);
   const [nameInvalid, setNameInvalid] = useState(false);
   const [phoneNoInvalid, setPhoneNoInvalid] = useState(false);
   const [emailIDInvalid, setEmailIDInvalid] = useState(false);
@@ -145,7 +147,6 @@ const Form = ({ setOpen, open }) => {
   ];
 
   const handleChange = (e) => {
-    console.log(e)
     switch (e.target.name) {
       case "name":
         setName(e.target.value);
