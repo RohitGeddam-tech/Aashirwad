@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
+import moment from 'moment'
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -109,12 +110,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Form = () => {
-  const dateTime =new Date()
+  const dateTime = moment().format().replace('+05:30', '')
 
   const [name, setName] = useState("");
   const [phoneNo, setPhoneNo] = useState("");
   const [emailID, setEmailID] = useState("");
   const [sel, setSel] = useState("");
+  // const [date, setDate] = useState(`2017-05-24T10:30`);
   const [date, setDate] = useState(`${dateTime}`);
   const [nameInvalid, setNameInvalid] = useState(false);
   const [phoneNoInvalid, setPhoneNoInvalid] = useState(false);
