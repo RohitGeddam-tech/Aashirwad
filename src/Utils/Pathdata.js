@@ -1,9 +1,9 @@
-import path1 from "../Photos/path1.svg";
-import path2 from "../Photos/path2.svg";
-import path3 from "../Photos/path3.svg";
-import path4 from "../Photos/path4.svg";
-import path5 from "../Photos/path5.svg";
-import path6 from "../Photos/path6.svg";
+import path1 from "../Photos/Image.jpg";
+import path2 from "../Photos/Image1.jpg";
+import path3 from "../Photos/Image2.jpg";
+import path4 from "../Photos/Image3.jpg";
+import path5 from "../Photos/Image4.jpg";
+import path6 from "../Photos/Image5.jpg";
 
 const PathData = [
   {
