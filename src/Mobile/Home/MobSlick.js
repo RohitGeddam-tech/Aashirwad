@@ -9,7 +9,7 @@ import Button from "../../Utils/Button";
 const SliderContent = () => {
   return (
     <div className="mobOffersSlide">
-      <img src={scrn} alt='offersImage'/>
+      <img loading='lazy' src={scrn} alt='offersImage'/>
       <h3>Test Name</h3>
       <h4>Rs.600</h4>
       <p>Kristy is an art director living in New York.</p>

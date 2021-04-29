@@ -20,12 +20,12 @@ const MobFooter = () => {
           <NavHashLink to="/#contact">TERMS & CONDITIONS</NavHashLink>
         </div>
         <div className="mobFooterIcons">
-          <img src={fb} alt="fb" />
-          <img src={insta} alt="insta" />
-          <img src={linked} alt="linkedin" />
+          <img loading='lazy' src={fb} alt="fb" />
+          <img loading='lazy' src={insta} alt="insta" />
+          <img loading='lazy' src={linked} alt="linkedin" />
         </div>
         <div className="mobFooterCopy">
-          <img src={copy} alt="copyright" />
+          <img loading='lazy' src={copy} alt="copyright" />
         </div>
       </div>
     </div>

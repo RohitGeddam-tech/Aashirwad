@@ -10,7 +10,7 @@ const Middle = () => {
         <div className="left">
           <div className="middleHeading">
             <h1>DOCTOR’S MESSAGE</h1>
-            <img src={line} alt="line" />
+            <img loading='lazy' src={line} alt="line" />
           </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -25,7 +25,7 @@ const Middle = () => {
           </p>
         </div>
         <div className="right">
-          <img src={doc} alt="doc" />
+          <img loading='lazy' src={doc} alt="doc" />
           <h2>Dr. Tushar Desai</h2>
         </div>
       </div>

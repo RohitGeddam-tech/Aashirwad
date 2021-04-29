@@ -21,7 +21,7 @@ const MobNav = () => {
                 setActive(false);
               }}
             >
-              <img src={logo} alt="logo" />
+              <img loading='lazy' src={logo} alt="logo" />
             </NavHashLink>
           </div>
           <button

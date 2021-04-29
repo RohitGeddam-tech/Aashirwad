@@ -12,7 +12,7 @@ const FirstAbout = () => {
         </div>
         <div className="outerbox">
           <div className="innerbox1">
-            <img style={{ marginTop: "30px" }} src={flag} alt='flag' />
+            <img loading='lazy' style={{ marginTop: "30px" }} src={flag} alt='flag' />
             <h2 className="boxtitle">OUR MISSION</h2>
             <p className="boxtext">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -21,7 +21,7 @@ const FirstAbout = () => {
           </div>
           <div className="dashed"></div>
           <div className="innerbox2">
-            <img style={{ marginTop: "30px" }} src={vision} alt='vision' />
+            <img loading='lazy' style={{ marginTop: "30px" }} src={vision} alt='vision' />
             <h2 className="boxtitle">OUR vision</h2>
             <p className="boxtext">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

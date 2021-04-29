@@ -9,7 +9,7 @@ const MobBanner = () => {
       <div className="absoluteMob">
         <MobSlider />
       </div>
-      <img src={banner} alt="banner" />
+      <img loading='lazy' src={banner} alt="banner" />
     </div>
   );
 };

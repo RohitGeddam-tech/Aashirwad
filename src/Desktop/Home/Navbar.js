@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="navbarContainer">
         <div>
           <NavHashLink to="/Aashirwad#top">
-            <img src={logo} alt="logo" />
+            <img loading='lazy' src={logo} alt="logo" />
           </NavHashLink>
         </div>
         <div className="navbarLinks">

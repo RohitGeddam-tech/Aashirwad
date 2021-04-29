@@ -7,7 +7,7 @@ const MobMiddle = () => {
   return (
     <div className="mobmiddle">
       <MobHeading text="doctor's message" name="mobmiddleHeading" />
-      <img src={doc} alt="doc" />
+      <img loading='lazy' src={doc} alt="doc" />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor

@@ -10,7 +10,7 @@ const TabAbout = () => {
     <div className="mobabout">
       <div className="tabbaboutContainer">
         <MobHeading text="About us" name="mobaboutHeading" />
-        <img src={doc} alt="doctor" />
+        <img loading='lazy' src={doc} alt="doctor" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem

@@ -8,7 +8,7 @@ const Overflow = () => {
         <div className='overflowAlign'>
           {RawData.map((doc) => (
             <div className="overflowBox" key={doc.id}>
-              <img src={doc.image} alt={doc.title} />
+              <img loading='lazy' src={doc.image} alt={doc.title} />
               <h3>{doc.title}</h3>
             </div>
           ))}

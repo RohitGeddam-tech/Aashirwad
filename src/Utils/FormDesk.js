@@ -230,6 +230,7 @@ const Form = ({ setOpen, open }) => {
           <div></div>
           <div></div>
           <img
+            loading='lazy'
             className={classes.iconimg}
             src={cross}
             alt="cross"

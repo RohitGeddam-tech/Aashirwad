@@ -18,14 +18,14 @@ const Footer = () => {
           <NavHashLink to="/">PRIVACY POLICY</NavHashLink>
           <NavHashLink to="/">TERMS & CONDITIONS</NavHashLink>
         </div>
-        <img src={line} alt="line" />
+        <img loading='lazy' src={line} alt="line" />
         <div className="footerIcons">
-          <img src={fb} alt="fb" />
-          <img src={insta} alt="insta" />
-          <img src={linked} alt="linkedin" />
+          <img loading='lazy' src={fb} alt="fb" />
+          <img loading='lazy' src={insta} alt="insta" />
+          <img loading='lazy' src={linked} alt="linkedin" />
         </div>
         <div className="footerCopy">
-          <img src={copy} alt="copyright" />
+          <img loading='lazy' src={copy} alt="copyright" />
         </div>
       </div>
     </div>

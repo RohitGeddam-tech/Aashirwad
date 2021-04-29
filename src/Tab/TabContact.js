@@ -13,13 +13,13 @@ const TabContact = () => {
         <div className="tabFlex">
           <div className="tabcontactBox">
             <a href="tel:+91 22 2671 1340" className="imagemob">
-              <img src={call} alt="call" />
+              <img loading='lazy' src={call} alt="call" />
             </a>
             <a href="tel:+91 22 2671 1340">+912226711340</a>
           </div>
           <div className="tabcontactBox">
             <a href="mailto:contact@aashirwadlabs.com" className="imagemob">
-              <img src={email} alt="email" />
+              <img loading='lazy' src={email} alt="email" />
             </a>
             <a href="mailto:contact@aashirwadlabs.com">
               contact@aashirwadlabs.com
@@ -28,7 +28,7 @@ const TabContact = () => {
         </div>
         <div className="tabcontactBoxmap">
           <a href="https://goo.gl/maps/mEUdamwgNEbd6Ddh8" className="imagemob">
-            <img src={location} alt="location" />
+            <img loading='lazy' src={location} alt="location" />
           </a>
           <a href="https://goo.gl/maps/mEUdamwgNEbd6Ddh8">
             Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar,

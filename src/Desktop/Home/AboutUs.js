@@ -10,12 +10,12 @@ const AboutUs = () => {
     <div className="aboutus">
       <div className="aboutusContainer">
         <div className="aboutusImage">
-          <img src={doc} alt="doctor" />
+          <img loading='lazy' src={doc} alt="doctor" />
         </div>
         <div className="aboutusInfo">
           <div className="aboutusHeading">
             <h1>About Us</h1>
-            <img src={line} alt="line" />
+            <img loading='lazy' src={line} alt="line" />
           </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

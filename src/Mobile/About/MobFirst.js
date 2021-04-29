@@ -11,16 +11,16 @@ const MobFirst = () => {
       <MobHeading text="About us" name="firstHeading" />
       <div className="mobouterbox">
         <div className="mobinnerbox1">
-          <img src={flag} alt="flag" />
+          <img loading='lazy' src={flag} alt="flag" />
           <h2>OUR MISSION</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
-        <img src={line} alt="line" />
+        <img loading='lazy' src={line} alt="line" />
         <div className="mobinnerbox1">
-          <img src={vision} alt="vision" />
+          <img loading='lazy' src={vision} alt="vision" />
           <h2>OUR vision</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

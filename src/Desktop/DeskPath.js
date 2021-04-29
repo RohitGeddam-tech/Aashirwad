@@ -14,7 +14,7 @@ const DeskPath = () => {
           <div className='pathData'>
               {PathData.map(doc=>(
                   <div key={doc.id} className='dataBox'>
-                      <img src={doc.image} alt={doc.title} />
+                      <img loading='lazy' src={doc.image} alt={doc.title} />
                       <h1>{doc.title}</h1>
                       <p>{doc.para}</p>
                   </div>

@@ -13,9 +13,9 @@ const Bottom = () => {
         </div>
         <div className='slider'>
           <div className='imgOverflow'>
-              <img src={last} alt='last'/>
-              <img src={last} alt='last'/>
-              <img src={last} alt='last'/>
+              <img loading='lazy' src={last} alt='last'/>
+              <img loading='lazy' src={last} alt='last'/>
+              <img loading='lazy' src={last} alt='last'/>
           </div>
         </div>
       </div>

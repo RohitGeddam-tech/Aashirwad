@@ -4,9 +4,9 @@ const LineHeading = ({ text, name, line }) => {
   return (
     <>
       <div className={name}>
-        <img src={line} alt="line" />
+        <img loading='lazy' src={line} alt="line" />
         <h1>{text}</h1>
-        <img src={line} alt="line" />
+        <img loading='lazy' src={line} alt="line" />
       </div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

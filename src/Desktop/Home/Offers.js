@@ -8,9 +8,9 @@ const Offers = () => {
     <div className="offers">
       <div className="offersContainer">
         <div className="offersHeading">
-          <img src={line} alt="line" />
+          <img loading='lazy' src={line} alt="line" />
           <h1>Offers</h1>
-          <img src={line} alt="line" />
+          <img loading='lazy' src={line} alt="line" />
         </div>
         <SlickSlider />
       </div>

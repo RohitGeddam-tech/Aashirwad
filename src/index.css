@@ -34,7 +34,8 @@ code {
   line-height: 37px;
   text-transform: uppercase;
   color: #092f57;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%,-40%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

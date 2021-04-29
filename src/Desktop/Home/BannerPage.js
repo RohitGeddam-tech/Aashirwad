@@ -6,7 +6,7 @@ import "../css/banner.css";
 const BannerPage = () => {
   return (
     <div className="banner">
-      <img src={cover} alt="cover" />
+      <img loading='lazy' src={cover} alt="cover" />
       <div className="absoluteBox">
         <div className="whitebox">
           <h1>Banner Title</h1>

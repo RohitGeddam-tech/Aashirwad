@@ -17,9 +17,9 @@ const ImgSlider = () => {
   return (
     <div className="imgslick">
       <Slider {...settings}>
-        <img src={last} alt='last'/>
-        <img src={last} alt='last'/>
-        <img src={last} alt='last'/>
+        <img loading='lazy' src={last} alt='last'/>
+        <img loading='lazy' src={last} alt='last'/>
+        <img loading='lazy' src={last} alt='last'/>
       </Slider>
     </div>
   );
