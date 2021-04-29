@@ -1,7 +1,7 @@
 .first {
   width: 100%;
   padding: 20px 0;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .firstHeading {
@@ -28,14 +28,14 @@
 }
 
 .mobouterbox img {
-  width: 95%;
+  width: 65%;
   height: 1px;
   margin: auto;
 }
 
 .mobinnerbox1 {
   width: 100%;
-  padding: 20px 0;
+  padding: 40px 0;
   display: flex;
   flex-flow: column;
   align-items: center;
