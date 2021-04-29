@@ -1,6 +1,10 @@
-import React, { useEffect, useState } from "react";
-import DeskPath from "../Desktop/DeskPath";
-import MobPath from "../Mobile/MobPath";
+import React, { useEffect, useState, lazy, Suspense } from "react";
+// import DeskPath from "../Desktop/DeskPath";
+// import MobPath from "../Mobile/MobPath";
+
+
+const DeskPath = lazy(()=>import('../Desktop/DeskPath'))
+const MobPath = lazy(()=>import('../Mobile/MobPath'))
 
 const Path = () => {
   const [isMobile, setMobile] = useState(
@@ -22,9 +26,9 @@ const Path = () => {
   });
 
   return (
-    <>
+    <Suspense fallback={<div className='load'>Loading...</div>}>
       {isDesktop ? <>{isMobile ? <MobPath /> : <DeskPath />}</> : <DeskPath />}
-    </>
+    </Suspense>
   );
 };
 

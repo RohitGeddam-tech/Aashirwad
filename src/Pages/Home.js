@@ -1,7 +1,12 @@
-import React, { useState, useEffect } from "react";
-import DeskHome from "../Desktop/DeskHome";
-import MobHome from "../Mobile/MobHome";
-import TabHome from "../Tab/TabHome";
+import React, { useState, useEffect, Suspense, lazy } from "react";
+// import DeskHome from "../Desktop/DeskHome";
+// import MobHome from "../Mobile/MobHome";
+// import TabHome from "../Tab/TabHome";
+
+const DeskHome = lazy(()=>import('../Desktop/DeskHome'))
+const MobHome = lazy(()=>import('../Mobile/MobHome'))
+const TabHome = lazy(()=>import('../Tab/TabHome'))
+
 
 const Home = () => {
   const [isMobile, setMobile] = useState(
@@ -32,9 +37,9 @@ const Home = () => {
   });
 
   return (
-    <>
+    <Suspense fallback={<div className='load'>Loading...</div>}>
       {isDesktop ? <>{isTab ? <>{isMobile ? <MobHome /> : <TabHome />}</>: <DeskHome />}</> : <DeskHome />}
-    </>
+    </Suspense>
   );
 };
 

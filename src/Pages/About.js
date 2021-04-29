@@ -1,6 +1,9 @@
-import React,{useState, useEffect} from 'react'
-import DeskAbout from '../Desktop/DeskAbout'
-import MobAboutPage from "../Mobile/MobAboutPage";
+import React,{useState, useEffect, Suspense, lazy} from 'react'
+// import DeskAbout from '../Desktop/DeskAbout'
+// import MobAboutPage from "../Mobile/MobAboutPage";
+
+const DeskAbout = lazy(()=>import('../Desktop/DeskAbout'))
+const MobAboutPage = lazy(()=>import('../Mobile/MobAboutPage'))
 
 const About = () => {
     const [isMobile, setMobile] = useState(window.matchMedia("(max-width:800px)").matches);
@@ -18,9 +21,9 @@ const About = () => {
     });
 
     return (
-        <>
+        <Suspense fallback={<div className='load'>Loading...</div>}>
             {isDesktop ? <>{isMobile ? <MobAboutPage /> : <DeskAbout />}</> : <DeskAbout />}
-        </>
+        </Suspense>
     )
 }
 
