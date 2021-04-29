@@ -26,7 +26,7 @@ const Contact = () => {
               contact@aashirwadlabs.com
             </a>
           </div>
-          <div className="contactBox">
+          <div className="contactlocBox">
             <a href="https://goo.gl/maps/mEUdamwgNEbd6Ddh8">
               <img loading='lazy' src={location} alt="location" />
             </a>

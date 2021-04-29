@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NavHashLink } from "react-router-hash-link";
 import Button from "../../Utils/Button";
+import SliderNextArrow from "../../Utils/SliderNextArrow";
+import SliderPrevArrow from "../../Utils/SliderPrevArrow";
 
 const SliderContent = () => {
   return (
@@ -29,6 +31,8 @@ const MobSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <SliderNextArrow />,
+    prevArrow: <SliderPrevArrow />,
     initialSlide: 0,
   };
   return (

@@ -20,7 +20,7 @@ const MobContact = () => {
             contact@aashirwadlabs.com
           </a>
         </div>
-        <div className="mobcontactBox">
+        <div className="mobcontactlocBox">
           <a href="https://goo.gl/maps/mEUdamwgNEbd6Ddh8" className='imagemob'><img loading='lazy' src={location} alt="location" /></a>
           <a href="https://goo.gl/maps/mEUdamwgNEbd6Ddh8">
             Bldg No 108, Ground Floor, Heera Nav Jeevan Society, Pant Nagar,

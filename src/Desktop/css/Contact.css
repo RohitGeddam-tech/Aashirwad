@@ -13,6 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
+  padding-bottom: 0;
 }
 
 .contactHeading img {
@@ -80,7 +82,7 @@
 }
 
 .contactlocBox {
-  width: 35%;
+  width: 33%;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -102,7 +104,6 @@
   line-height: 24px;
   display: flex;
   align-items: center;
-  text-transform: lowercase;
   color: #092f57;
   text-decoration: none;
 }

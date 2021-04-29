@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import scrn from "../../Photos/offers2.jpg";
 import { NavHashLink } from "react-router-hash-link";
 import Button from "../../Utils/Button";
+import SliderNextArrow from "../../Utils/SliderNextArrow";
+import SliderPrevArrow from "../../Utils/SliderPrevArrow";
 
 const SliderContent = () => {
   return (
@@ -26,7 +28,10 @@ const SlickSlider = () => {
     infinite: false,
     speed: 500,
     slidesToShow: 4,
+    arrows: true,
     slidesToScroll: 1,
+    nextArrow: <SliderNextArrow />,
+    prevArrow: <SliderPrevArrow />,
     initialSlide: 0,
     responsive: [
       {
@@ -39,11 +44,10 @@ const SlickSlider = () => {
         },
       },
       {
-        breakpoint: 860,
+        breakpoint: 360,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 0.5,
+          slidesToScroll: 0.5,
         },
       },
       {
@@ -51,13 +55,13 @@ const SlickSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,
+          arrows: true,
         },
       },
     ],
   };
   return (
-    <div className="boxslick">
+    <div className="mobboxslick">
       <Slider {...settings}>
         <SliderContent />
         <SliderContent />

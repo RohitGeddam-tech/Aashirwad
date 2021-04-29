@@ -5,11 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 import scrn from "../../Photos/offers2.jpg";
 // import { Link } from "react-router-dom";
 import ButtonMod from "../../Utils/ButtonMod";
+import SliderPrevArrow from "../../Utils/SliderPrevArrow";
+import SliderNextArrow from "../../Utils/SliderNextArrow";
 
 const SliderContent = () => {
   return (
     <div className="OffersSlide">
-      <img loading='lazy' src={scrn} alt='offersImage'/>
+      <img loading="lazy" src={scrn} alt="offersImage" />
       <h3>Test Name</h3>
       <h4>Rs.600</h4>
       <p>Kristy is an art director living in New York.</p>
@@ -27,6 +29,8 @@ const SlickSlider = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    nextArrow: <SliderNextArrow />,
+    prevArrow: <SliderPrevArrow />,
     initialSlide: 0,
     responsive: [
       {
@@ -51,7 +55,6 @@ const SlickSlider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,
         },
       },
     ],

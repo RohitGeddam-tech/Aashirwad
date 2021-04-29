@@ -1,24 +1,14 @@
-.service {
+.mobservice {
   width: 100%;
   background-color: #092f57;
   padding: 30px 0;
 }
 
-.serviceContainer {
+.mobserviceContainer {
   width: 93%;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.serviceHeading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.serviceHeading img {
-  height: 1px;
 }
 
 .mobserviceHeading {
@@ -34,10 +24,10 @@
   line-height: 37px;
   text-transform: uppercase;
   color: white;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
-.serviceContainer p {
+.mobserviceContainer p {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
@@ -46,6 +36,8 @@
   text-align: center;
   color: #fff;
   padding-bottom: 20px;
+  width: 98%;
+  margin-bottom: 10px;
 }
 
 .mobOverflow{

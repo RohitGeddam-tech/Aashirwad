@@ -7,13 +7,14 @@
   width: 90%;
   margin: auto;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .offersHeading {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
 }
 
 .offersHeading img {

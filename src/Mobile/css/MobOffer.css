@@ -17,6 +17,12 @@
 
 /*experiment*/
 
+.mobboxslick{
+  width: 80%;
+  padding-top: 10px;
+  margin: auto;
+}
+
 .mobOffersSlide {
   box-sizing: border-box;
   border-radius: 5px;

@@ -65,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "20px",
     lineHeight: " 134.77%",
     textAlign: "center",
-    color: "#5FBFE2",
+    color: "#092f57",
   },
   tel: {
     fontFamily: "Montserrat",

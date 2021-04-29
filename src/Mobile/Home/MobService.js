@@ -5,8 +5,8 @@ import MobHeading from "../../Utils/MobHeading";
 
 const MobService = () => {
   return (
-    <div className="service">
-      <div className="serviceContainer">
+    <div className="mobservice">
+      <div className="mobserviceContainer">
         <MobHeading text="services" name="mobserviceHeading" />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
