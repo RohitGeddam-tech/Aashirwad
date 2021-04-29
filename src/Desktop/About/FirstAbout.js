@@ -1,6 +1,6 @@
 import React from "react";
-import flag from "./Photos/flag.svg";
-import vision from "./Photos/vision.svg";
+import flag from "./Photos/flag.jpg";
+import vision from "./Photos/vision.jpg";
 import './css/FirstAbout.css'
 
 const FirstAbout = () => {

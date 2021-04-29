@@ -1,6 +1,6 @@
 import React from "react";
 import line from "./Photos/Line3.jpg";
-import doc from "./Photos/doc.svg";
+import doc from "./Photos/doc.jpg";
 import "./css/Middle.css";
 
 const Middle = () => {

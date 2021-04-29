@@ -1,6 +1,6 @@
 import React from "react";
-import flag from "../../Desktop/About/Photos/flag.svg";
-import vision from "../../Desktop/About/Photos/vision.svg";
+import flag from "../../Desktop/About/Photos/flag.jpg";
+import vision from "../../Desktop/About/Photos/vision.jpg";
 import line from "../../Photos/Line2.jpg";
 import MobHeading from "../../Utils/MobHeading";
 import "./MobFirst.css";

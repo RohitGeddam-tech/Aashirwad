@@ -6,7 +6,7 @@ import ImgSlider from "./ImgSlider";
 const MobBottom = () => {
   return (
     <div className="mobbottom">
-        <MobHeading text='certificates & accomplishments' name='mobaboutHeading' />
+        <MobHeading text='certificates & accomplishments' name='mobbottomHeading' />
         <ImgSlider />
     </div>
   );

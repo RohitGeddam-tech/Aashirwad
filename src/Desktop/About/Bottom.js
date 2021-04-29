@@ -1,7 +1,7 @@
 import React from "react";
 import line from "./Photos/Line2.jpg";
 import "./css/Bottom.css";
-import last from './Photos/lastpage.svg'
+import last from './Photos/lastpage.jpg'
 
 const Bottom = () => {
   return (

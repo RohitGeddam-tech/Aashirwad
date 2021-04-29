@@ -1,16 +1,33 @@
-.mobbottom{
-    width: 100%;
-    padding: 40px 0;
-    padding-bottom: 20px;
+.mobbottom {
+  width: 100%;
+  padding: 40px 0;
+  padding-bottom: 20px;
 }
 
-.imgslick{
-    width: 82%;
-    margin: auto;
-    padding: 20px 0;
+.imgslick {
+  width: 82%;
+  margin: auto;
+  padding: 20px 0;
 }
 
-.imgslick img{
-    width: 100%;
-    padding: 0 10px;
+.imgslick img {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.mobbottomHeading {
+  display: flex;
+  justify-content: center;
+}
+
+.mobbottomHeading h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #092f57;
+  padding-bottom: 30px;
+  text-align: center;
 }

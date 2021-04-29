@@ -1,5 +1,5 @@
 import React from "react";
-import doc from "../../Desktop/About/Photos/doc.svg";
+import doc from "../../Desktop/About/Photos/doc.jpg";
 import MobHeading from "../../Utils/MobHeading";
 import "./MobMiddle.css";
 
