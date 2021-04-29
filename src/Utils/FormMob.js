@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
-import DateTimePicker from 'react-datetime-picker'
+// import DateTimePicker from "react-datetime-picker";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -107,13 +107,13 @@ const useStyles = makeStyles((theme) => ({
     zIndex: "9999",
     margin: "auto",
   },
-  date:{
+  date: {
     margin: "auto",
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
     width: "80%",
     outline: "none",
-  }
+  },
 }));
 
 const Form = () => {
@@ -123,8 +123,8 @@ const Form = () => {
   const [phoneNo, setPhoneNo] = useState("");
   const [emailID, setEmailID] = useState("");
   const [sel, setSel] = useState("");
-  const [date, setDate] = useState('');
-  // const [date, setDate] = useState(`${dateTime}`);
+  const [date, setDate] = useState("");
+  const [recdate, setRecDate] = useState(false);
   const [nameInvalid, setNameInvalid] = useState(false);
   const [phoneNoInvalid, setPhoneNoInvalid] = useState(false);
   const [emailIDInvalid, setEmailIDInvalid] = useState(false);
@@ -180,6 +180,13 @@ const Form = () => {
       default:
         break;
     }
+    setForm({
+      name: name.charAt(0).toUpperCase() + name.slice(1),
+      phoneNo: phoneNo,
+      emailID: emailID,
+      sel: sel,
+      date: date,
+    });
   };
 
   const handleSubmit = (e) => {
@@ -299,8 +306,12 @@ const Form = () => {
             ))}
           </Select>
         </FormControl>
-        {selInvalid ? <p className={classes.p}>Please provide a selected package</p> : ""}
-        {/* <TextField
+        {selInvalid ? (
+          <p className={classes.p}>Please provide a selected package</p>
+        ) : (
+          ""
+        )}
+        <TextField
           id="datetime-local"
           type="datetime-local"
           label="Select Date & Time"
@@ -308,16 +319,18 @@ const Form = () => {
           value={date}
           name="date"
           onChange={handleChange}
-          InputLabelProps={{
-            shrink: true,
-          }}
+          onClick={()=>{setRecDate(true)}}
+          InputLabelProps={
+            recdate ? {shrink: true} : {shrink: false}
+          }
           variant="outlined"
-        /> */}
-        <DateTimePicker
+        />
+        {/* <DateTimePicker
+          name="date"
           className={classes.date}
           value={date}
           onChange={setDate}
-        />
+        /> */}
         {dateInvalid ? (
           <p className={classes.p}>Please provide the appointment date</p>
         ) : (
