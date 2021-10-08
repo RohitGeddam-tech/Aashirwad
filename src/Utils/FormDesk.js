@@ -6,6 +6,8 @@ import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import { Modal } from "@material-ui/core";
 import cross from "../Photos/Shape.svg";
+import DateFnsUtils from "@date-io/date-fns";
+import { DatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -16,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     alignItems: "center",
     borderRadius: "3px",
+    outline: "none",
   },
   textField: {
     margin: "auto",
@@ -113,6 +116,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     zIndex: "9999",
     margin: "auto",
+    outline: "none",
   },
 }));
 
@@ -121,12 +125,11 @@ const Form = ({ setOpen, open }) => {
   const [phoneNo, setPhoneNo] = useState("");
   const [emailID, setEmailID] = useState("");
   const [sel, setSel] = useState("");
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState(new Date());
   const [nameInvalid, setNameInvalid] = useState(false);
   const [phoneNoInvalid, setPhoneNoInvalid] = useState(false);
   const [emailIDInvalid, setEmailIDInvalid] = useState(false);
   const [selInvalid, setSelInvalid] = useState(false);
-  const [dateInvalid, setDateInvalid] = useState(false);
   const [validity, setValidity] = useState(false);
   const [form, setForm] = useState({});
   const [formEmpty, setFormEmpty] = useState(false);
@@ -170,10 +173,6 @@ const Form = ({ setOpen, open }) => {
         setSel(e.target.value);
         setSelInvalid(!e.target.value);
         break;
-      case "date":
-        setDate(e.target.value);
-        setDateInvalid(!e.target.validity.valid);
-        break;
       default:
         break;
     }
@@ -188,15 +187,7 @@ const Form = ({ setOpen, open }) => {
       setFormEmpty(false);
     }
 
-    if (
-      !(
-        nameInvalid ||
-        phoneNoInvalid ||
-        emailIDInvalid ||
-        selInvalid ||
-        dateInvalid
-      )
-    ) {
+    if (!(nameInvalid || phoneNoInvalid || emailIDInvalid || selInvalid)) {
       setValidity(true);
       setForm({
         name: name.charAt(0).toUpperCase() + name.slice(1),
@@ -208,9 +199,13 @@ const Form = ({ setOpen, open }) => {
     } else {
       setValidity(false);
     }
-
-    console.log(form);
   };
+
+  React.useEffect(() => {
+    if (validity) {
+      console.log(form);
+    }
+  }, [form, validity]);
 
   return (
     <Modal
@@ -230,7 +225,7 @@ const Form = ({ setOpen, open }) => {
           <div></div>
           <div></div>
           <img
-            loading='lazy'
+            loading="lazy"
             className={classes.iconimg}
             src={cross}
             alt="cross"
@@ -315,8 +310,12 @@ const Form = ({ setOpen, open }) => {
             ))}
           </Select>
         </FormControl>
-        {selInvalid ? <p className={classes.p}>Please provide a selected package</p> : ""}
-        <TextField
+        {selInvalid ? (
+          <p className={classes.p}>Please provide a selected package</p>
+        ) : (
+          ""
+        )}
+        {/* <TextField
           id="datetime-local"
           type="datetime-local"
           label="Select Date & Time"
@@ -328,12 +327,20 @@ const Form = ({ setOpen, open }) => {
             shrink: true,
           }}
           variant="outlined"
-        />
-        {dateInvalid ? (
-          <p className={classes.p}>Please provide the appointment date</p>
-        ) : (
-          ""
-        )}
+        /> */}
+        <MuiPickersUtilsProvider utils={DateFnsUtils}>
+          <DatePicker
+            disablePast={true}
+            label={`Select Date & Time`}
+            inputVariant="outlined"
+            className={classes.textField}
+            minDate={date}
+            format="E, dd MMM"
+            value={date}
+            onChange={setDate}
+            animateYearScrolling
+          />
+        </MuiPickersUtilsProvider>
         <div className={classes.alignbtn}>
           <button type="submit" className="button">
             Submit
