@@ -5,6 +5,8 @@ import InputLabel from "@material-ui/core/InputLabel";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 // import DateTimePicker from "react-datetime-picker";
+import DateFnsUtils from "@date-io/date-fns";
+import { DateTimePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -123,13 +125,13 @@ const Form = () => {
   const [phoneNo, setPhoneNo] = useState("");
   const [emailID, setEmailID] = useState("");
   const [sel, setSel] = useState("");
-  const [date, setDate] = useState("");
-  const [recdate, setRecDate] = useState(false);
+  const [date, setDate] = useState(new Date());
+  // const [recdate, setRecDate] = useState(false);
   const [nameInvalid, setNameInvalid] = useState(false);
   const [phoneNoInvalid, setPhoneNoInvalid] = useState(false);
   const [emailIDInvalid, setEmailIDInvalid] = useState(false);
   const [selInvalid, setSelInvalid] = useState(false);
-  const [dateInvalid, setDateInvalid] = useState(false);
+  // const [dateInvalid, setDateInvalid] = useState(false);
   const [validity, setValidity] = useState(false);
   const [form, setForm] = useState({});
   const [formEmpty, setFormEmpty] = useState(false);
@@ -173,10 +175,6 @@ const Form = () => {
         setSel(e.target.value);
         setSelInvalid(!e.target.value);
         break;
-      case "date":
-        setDate(e.target.value);
-        setDateInvalid(!e.target.validity.valid);
-        break;
       default:
         break;
     }
@@ -203,8 +201,7 @@ const Form = () => {
         nameInvalid ||
         phoneNoInvalid ||
         emailIDInvalid ||
-        selInvalid ||
-        dateInvalid
+        selInvalid 
       )
     ) {
       setValidity(true);
@@ -311,7 +308,7 @@ const Form = () => {
         ) : (
           ""
         )}
-        <TextField
+        {/* <TextField
           id="datetime-local"
           type="datetime-local"
           label="Select Date & Time"
@@ -324,18 +321,32 @@ const Form = () => {
             recdate ? {shrink: true} : {shrink: false}
           }
           variant="outlined"
-        />
+        /> */}
+        <MuiPickersUtilsProvider utils={DateFnsUtils}>
+          <DateTimePicker
+            disablePast={true}
+            label={`Select Date & Time`}
+            inputVariant="outlined"
+            className={classes.textField}
+            minDate={date}
+            format="E, dd MMM h:mm a"
+            // onClick={()=>{setRecDate(true)}}
+            value={date}
+            onChange={setDate}
+            // disablePast
+          />
+        </MuiPickersUtilsProvider>
         {/* <DateTimePicker
           name="date"
           className={classes.date}
           value={date}
           onChange={setDate}
         /> */}
-        {dateInvalid ? (
+        {/* {dateInvalid ? (
           <p className={classes.p}>Please provide the appointment date</p>
         ) : (
           ""
-        )}
+        )} */}
         <div className={classes.alignbtn}>
           <button type="submit" className="button">
             Submit

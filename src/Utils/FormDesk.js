@@ -7,7 +7,7 @@ import Select from "@material-ui/core/Select";
 import { Modal } from "@material-ui/core";
 import cross from "../Photos/Shape.svg";
 import DateFnsUtils from "@date-io/date-fns";
-import { DatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
+import { DateTimePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -329,16 +329,16 @@ const Form = ({ setOpen, open }) => {
           variant="outlined"
         /> */}
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
-          <DatePicker
+          <DateTimePicker
             disablePast={true}
             label={`Select Date & Time`}
             inputVariant="outlined"
             className={classes.textField}
             minDate={date}
-            format="E, dd MMM"
+            format="E, dd MMM h:mm a"
             value={date}
             onChange={setDate}
-            animateYearScrolling
+            // disablePast
           />
         </MuiPickersUtilsProvider>
         <div className={classes.alignbtn}>
